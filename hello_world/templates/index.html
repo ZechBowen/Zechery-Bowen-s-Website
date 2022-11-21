@@ -5,21 +5,92 @@
 <html>
 
 <head>
-    <title>{{ title }}</title>
+    <title>Zechery Bowen's Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{% static 'main.css' %}">
 
-<body>
-    <div class="App">
-        <header class="App-header">
-            <img src="{% static 'Octocat.png' %}" class="App-logo" alt="logo" />
-            <p>
-                GitHub Codespaces <span class="heart">♥️</span> Django
-            </p>
-            <p class="small">
-                Edit <code>hello_world/templates/index.html</code> and see changes live!
-            </p>
-        </header>
+<body align="center">
+    <div class="navbar">
+        <a href="#home" class="active" align="left">Zechery Bowen | Software Developer</a>
+        <div id="myLinks">
+        <a href="#Portfolio">Home</a>
+        <a href="#Experience">Experience</a>
+        <a href="#Contact">Hire Me</a>
+        <a href="#About">About</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        </a>
     </div>
-</body>
+    <h2 id="Portfolio"><img src="{% static 'signature4.png' %}" alt="Zechery's Signature" width="500" height="150" align="bottom" /></h2>
+        <p style="font-size:20;"><b>Hi, I'm Zech-Software Developer and Tech Enthusiast</b></p>
+        <p>Welcome! Explore my handcrafted page to get to know more about me, connect or check out some of my work.</p>
+            <form action="http://www.github.com"> 
+            <input type="button" name="Github" value="GITHUB" />
+            </form>
+            <form action="http://www.instagram.com"> 
+            <input type="button" name="Instagram" value="INSTAGRAM" />
+            </form>
+            <form action="http://www.twitch.com"> 
+            <input type="button" name="Twitch" value="TWITCH" />
+            </form>
+            
+    <h2 id="Experience">Experience</h2>
+        <p>Graduated from San Jacinto College with an Associate in Computer Science (3.1 GPA)</p>
+        <p>Skilled in multiple programming languages such as HTML, CSS, Java, C++, C#, Javascript, Pyhton and MATLAB.</p>
+        <p>Currently open for hire in the software development or closely related fields</p>
 
+    <h2 id="Contact">Hire Me</h2>
+        <address>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/zechery-bowen-2951a5171">Zechery Bowen | LinkedIn</a></p>
+            <p>Email: <a href="mailto:zecherybowen@yahoo.com">Zecherybowen@thiswebsite.com</a></p>
+        </address>
+        <p>If you are interested in hiring me please select an option below:</p>
+        <form action>
+        <div class="select">
+        <select name="type-of-work" id="type-of-work">
+        <option value="Front End Developement Full Time">Front End Developement - Full Time</option>
+        <option value="Back End Developement Full Time">Back End Developement - Full Time</option>
+        <option value="Game Developement Full Time">Game Developement - Full Time</option>
+        <option value="IOS/Andriod Developement Full Time">IOS/Andriod Developement - Full Time</option>
+        <option value="Front End Developement Contract/Freelance">Front End Developement - Contract/Freelance</option>
+        <option value="Back End Developement Contract/Freelance">Back End Developement - Contract/Freelance</option>
+        <option value="Game Developement Contract/Freelance">Game Developement - Contract/Freelance</option>
+        <option value="IOS/Andriod Developement Contract/Freelance">IOS/Development Developement - Contract/Freelance</option>
+        </select>
+        </div>
+        <p>Please describe as specifically as possible, what is your vision for this project:</p>
+        <textarea name="comments" cols="70" rows="10"></textarea>
+        <p></p>
+        <input type="submit" name="submit" value="Submit" />
+        </form>
+
+    <h2 id="About">About</h2>
+        <p style="font-size:18;"><b>Where I am:</b></p>
+        <p>My services are available worldwide but I am located in Houston, Texas</p>
+        <p style="font-size:18;"><b>What I do:</b></p>
+        <p>Design, architect and develop scalable cloud-native web and mobile applications as well as developing video games using a variety of software development tools.</p>
+        <p style="font-size:18;"><b>When am I available:</b></p>
+        <p>We have a flexible schedule so please <a href="mailto:zecherybowen@yahoo.com">email</a> us or submit a request in our <a href="#Contact">"Hire Me"</a> section of the website.</p>
+        <p style="font-size:18;"><b>Why I do software development:</b></p>
+        <p>I have had a passion for technology since I can remember so I just picked up coding as a hobby and decided to give it a chance long term.</p>
+        
+    <img src="{% static 'signature4.png' %}" alt="Zechery's Signature" width="500" height="150" align="bottom" />
+
+    <script>
+        function myFunction() {
+        var x = document.getElementById("myLinks");
+        if(x.style.display === "block") {
+        x.style.display = "none";
+        } else {
+        x.style.display = "block";
+        }
+        }
+    </script>
+        
+        
+        
+    </script>
+</body>
 </html>
+

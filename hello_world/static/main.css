@@ -1,45 +1,143 @@
-body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-      "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-      sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+p {
+  font-size: 18;
+  }
+  body {
+  font-family: Arial,Helvetica, sans-serif;
+  background-color: white;
+  }
+  .mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+  }
+  .navbar {
+  background-color: white;
+  overflow:hidden;
+  position: relative;
+  }
+  .navbar #myLinks {
+  display: none;
+  background-color: gainsboro;
+  border-width:1px;
+  }
+  .navbar a {
+  color: black;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 22px;
+  display: block;
+  }
+  .navbar a.icon {
+  background: white;
+  display: block;
+  position: absolute;
+  right:1;
+  top:1;
+  }
+  .navbar a:hover {
+  background-color: goldenrod;
+  color: black;
+  }
+  .active {
+  background-color: white;
+  color: white;
   }
   
-  code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-      monospace;
+  .select {
+  position: relative;
+  min-width: 200px;
+  border-radius: 5px;
+  border-width: 1px;
+  cursor:pointer;
+  }
+  .select svg {
+  position: absolute;
+  right: 200px;
+  top: 13px;
+  width: 10px;
+  height: 6px;
+  stroke-width: 2px;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+  }
+  .select select {
+  padding: 7px 40px 7px 12px;
+  width: 60%;
+  border-width: 1px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px -2px #9098a9;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 16px;
+  transition: all 150ms ease;
+  }
+  .select select:hover {
+  cursor: pointer;
+  stroke: goldenrod;
+  }
+  .select select:required:invalid {
+  color: #5a667f;
+  }
+  .select select option {
+  stroke: goldenrod;
+  cursor:pointer;
+  }
+  .select select option[value=""][disabled] {
+  display: none;
+  }
+  .select select:focus {
+  outline: none;
+  border-color: goldenrod;
+  cursor:pointer;
+  box-shadow: 0 0 0 2px rgba(0,119,255,0.2);
+  }
+  .select select:hover + svg {
+  stroke: goldenrod;
+  cursor:pointer;
+  }
+  .sprites {
+  position: absolute;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  user-select: none;
   }
   
-  .App {
-    text-align: center;
+  
+  input[type=submit] {
+  background-color: white;
+  color: black;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border-width: 1px;
+  }
+  input[type=submit]:hover {
+  background: goldenrod;
+  box-shadow: 0px 0px 1px #777;
+  cursor: pointer;
+  }
+  input[type=button] {
+  display: inline-block;
+  width: 30%;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 12px 16px;
+  font-size: 15px;
+  border-radius: 5px;
+  border-width: 1px;
+  margin: 2px 4px;
+  }
+  input[type=button]:hover {
+  background: goldenrod;
+  box-shadow: 0px 0px 1px #777;
+  cursor: pointer;
   }
   
-  .App-logo {
-    height: 40vmin;
-    pointer-events: none;
-  }
-  
-  .App-header {
-    background-color: #282c34;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
-  }
-  
-  .App-link {
-    color: #61dafb;
-  }
-  
-  .heart {
-    color: #ff0000;
-  }
-  
-  .small {
-    font-size: 0.75rem;
-  }
